@@ -20,58 +20,51 @@
 </head>
 
 <body>
-  <h2 class="centered">Snowflake Demo</h2>
-
-  <form id="namesForm">
-    <h2>Name</h2>
-    <div>
-      <input type="text">
-    </div>
-    <br/>
-    <div>
-      <input type="text">
-    </div>
-    <br/>
-    <div>
-      <input type="text">
-    </div>
-    <br/>
-    <div>
-      <input type="text">
-    </div>
-    <br/>
-    <div>
-      <input type="text">
-    </div>
-    <br/>
-    <div>
-      <input type="text">
-    </div>
-  </form>
-
-  <form id="datesForm">
-    <h2>Date of Birth</h2>
-    <div>
-      <input type="text">
-    </div>
-    <br/>
-    <div>
-      <input type="text">
-    </div>
-    <br/>
-    <div>
-      <input type="text">
-    </div>
-  </form>
-
-  <br/>
+  <h1 class="centered">Snowflake Demo</h1>
+  <h2 class="centered" id="hydroId"></h2>
+  <h2 class="centered" id="hasSnowflake"></h2>
 
   <form>
+    <h1>Mint Snowflake</h1>
+
+    <div id="namesForm">
+      <h2>Name</h2>
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </div>
+
+    <div id="datesForm">
+      <h2>Date of Birth</h2>
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </div>
+
+    <br/>
+
     <button type="button" id="mintSnowflake">Mint Snowflake</button>
+
+    <br/>
+    <div id="mintSnowflakeResult"></div>
   </form>
 
-  <div id="mintSnowflakeResult">
-  </div>
+  <br/><hr/>
+
+  <form id="snowflakeBalances">
+    <h1>Token Dynamics</h1>
+    <p>Hydro Balance: <span id="hydroBalance">Loading...</span></p>
+    <p>Snowflake Balance: <span id="snowflakeBalance">Loading...</span></p>
+    <input type="text">
+    <button type="button">Deposit</button>
+    <br/>
+    <div></div>
+  </form>
+
+  <!-- <br/> -->
 
 </body>
 
