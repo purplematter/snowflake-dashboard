@@ -74,7 +74,7 @@ const snowflakeDashboard = ($) => {
 
     let method = snowflakeContract.methods.mintIdentityToken(names, dates)
     // estimate gas to make sure the transaction doesn't fail
-    let estimatedGas = await method.estimateGas()
+    let estimatedGas = await method.estimateGas({ from: account })
       .catch(() => { return null })
     if (estimatedGas == null) {
       $('#mintSnowflakeResult').html(`<p>Gas required exceeds allowance or the transaction always fails.</p>`)
